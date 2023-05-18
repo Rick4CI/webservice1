@@ -1,0 +1,13 @@
+const { DataTypes } = require("sequelize");
+
+const role = sequelize.define('role', {
+    id_role: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+    },
+    name: {
+        type: DataTypes.STRING(50),
+        not_null: true,
+    }
+});
